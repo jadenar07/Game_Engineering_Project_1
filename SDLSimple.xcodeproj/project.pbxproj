@@ -8,15 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		AFAEA77F2C8B9E9100C86B6B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFAEA77E2C8B9E9100C86B6B /* main.cpp */; };
+		AFAEA78A2C8B9EF100C86B6B /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFAEA7862C8B9EEF00C86B6B /* ShaderProgram.cpp */; };
+		AFAEA78D2C8B9F5700C86B6B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAEA78C2C8B9F5700C86B6B /* OpenGL.framework */; };
+		AFAEA78F2C8B9F5A00C86B6B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAEA78E2C8B9F5A00C86B6B /* Cocoa.framework */; };
+		AFAEA7932C8B9F6B00C86B6B /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAEA7902C8B9F6B00C86B6B /* SDL2.framework */; };
+		AFAEA7942C8B9F6B00C86B6B /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAEA7912C8B9F6B00C86B6B /* SDL2_image.framework */; };
+		AFAEA7952C8B9F6B00C86B6B /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAEA7922C8B9F6B00C86B6B /* SDL2_mixer.framework */; };
+		AFAEA7962C8B9F7500C86B6B /* shaders in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFAEA7852C8B9EEF00C86B6B /* shaders */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AFAEA7792C8B9E9100C86B6B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 6;
 			files = (
+				AFAEA7962C8B9F7500C86B6B /* shaders in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -25,6 +33,18 @@
 /* Begin PBXFileReference section */
 		AFAEA77B2C8B9E9100C86B6B /* SDLSimple */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDLSimple; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAEA77E2C8B9E9100C86B6B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AFAEA7852C8B9EEF00C86B6B /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
+		AFAEA7862C8B9EEF00C86B6B /* ShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderProgram.cpp; sourceTree = "<group>"; };
+		AFAEA7872C8B9EF000C86B6B /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glm; sourceTree = "<group>"; };
+		AFAEA7882C8B9EF100C86B6B /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProgram.h; sourceTree = "<group>"; };
+		AFAEA7892C8B9EF100C86B6B /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		AFAEA78C2C8B9F5700C86B6B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		AFAEA78E2C8B9F5A00C86B6B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AFAEA7902C8B9F6B00C86B6B /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		AFAEA7912C8B9F6B00C86B6B /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		AFAEA7922C8B9F6B00C86B6B /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		AFDC54152CA3AAE100890B71 /* spiderman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spiderman.png; sourceTree = "<group>"; };
+		AFDC54162CA3AF9900890B71 /* naruto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naruto.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +52,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAEA7932C8B9F6B00C86B6B /* SDL2.framework in Frameworks */,
+				AFAEA7942C8B9F6B00C86B6B /* SDL2_image.framework in Frameworks */,
+				AFAEA7952C8B9F6B00C86B6B /* SDL2_mixer.framework in Frameworks */,
+				AFAEA78F2C8B9F5A00C86B6B /* Cocoa.framework in Frameworks */,
+				AFAEA78D2C8B9F5700C86B6B /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +68,7 @@
 			children = (
 				AFAEA77D2C8B9E9100C86B6B /* SDLSimple */,
 				AFAEA77C2C8B9E9100C86B6B /* Products */,
+				AFAEA78B2C8B9F5700C86B6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +83,28 @@
 		AFAEA77D2C8B9E9100C86B6B /* SDLSimple */ = {
 			isa = PBXGroup;
 			children = (
+				AFDC54152CA3AAE100890B71 /* spiderman.png */,
+				AFDC54162CA3AF9900890B71 /* naruto.png */,
 				AFAEA77E2C8B9E9100C86B6B /* main.cpp */,
+				AFAEA7872C8B9EF000C86B6B /* glm */,
+				AFAEA7862C8B9EEF00C86B6B /* ShaderProgram.cpp */,
+				AFAEA7882C8B9EF100C86B6B /* ShaderProgram.h */,
+				AFAEA7852C8B9EEF00C86B6B /* shaders */,
+				AFAEA7892C8B9EF100C86B6B /* stb_image.h */,
 			);
 			path = SDLSimple;
+			sourceTree = "<group>";
+		};
+		AFAEA78B2C8B9F5700C86B6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFAEA7912C8B9F6B00C86B6B /* SDL2_image.framework */,
+				AFAEA7922C8B9F6B00C86B6B /* SDL2_mixer.framework */,
+				AFAEA7902C8B9F6B00C86B6B /* SDL2.framework */,
+				AFAEA78E2C8B9F5A00C86B6B /* Cocoa.framework */,
+				AFAEA78C2C8B9F5700C86B6B /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFAEA77F2C8B9E9100C86B6B /* main.cpp in Sources */,
+				AFAEA78A2C8B9EF100C86B6B /* ShaderProgram.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +291,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL2_image.framework/Versions/A/Headers,
+					/Library/Frameworks/SDL2.framework/Versions/A/Headers,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +307,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL2_image.framework/Versions/A/Headers,
+					/Library/Frameworks/SDL2.framework/Versions/A/Headers,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
